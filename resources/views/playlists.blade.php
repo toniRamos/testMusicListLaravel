@@ -4,79 +4,49 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Music List</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{ URL::asset('css/musicList.css') }}">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body> 
 
-        <?php
-        foreach ($playList as $itemList){
-            echo $itemList['title'].PHP_EOL;
-            ?> </br> <?php
-            echo $itemList['url'].PHP_EOL;
-            ?> </br> <?php
-            echo $itemList['image_url'].PHP_EOL;
-            
-            ?> </br> <?php
-            ?> </br> <?php
-            ?> </br> <?php
-        }
-        ?>
+        <div class="logo">
+            <img src='https://musiclist.com/img/logo.svg'/>
+        </div>
+
+        <div class="Playlists">
+            <?php
+            foreach ($playList as $itemList){
+                ?>
+                    <div class="PlaylistItem">
+
+                <?php
+                    ?> </br> <?php
+
+                    ?> Name Playlist -> <a href="<?php echo $itemList['id'] ?>" target='_blank'><?php echo $itemList['title'] ?></a>  <?php
+                    
+                    ?> </br> <?php
+
+                    ?> Link -> <a href="<?php echo $itemList['url'] ?>" target='_blank'>Listen</a> <?php
+
+                    ?> </br> <?php
+                    ?> <img src='<?php echo $itemList['image_url'] ?>'/> <?php
+
+                    ?> </br> <?php
+                    ?> </br> <?php
+                    ?> </br> <?php
+                    
+                ?>
+                    </div>
+                <?php
+            }
+            ?>
+        </div>
+
     </body>
 </html>

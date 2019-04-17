@@ -65,6 +65,18 @@
     </head>
     <body> 
 
-        hola <?php print_r($name); ?>
+        <?php
+        foreach ($playList as $itemList){
+            echo $itemList['title'].PHP_EOL;
+            ?> </br> <?php
+            echo $itemList['url'].PHP_EOL;
+            ?> </br> <?php
+            echo $itemList['image_url'].PHP_EOL;
+            
+            ?> </br> <?php
+            ?> </br> <?php
+            ?> </br> <?php
+        }
+        ?>
     </body>
 </html>

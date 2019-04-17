@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/playlist', 'PlaylistFrontController@listPlaylist');
 
+Route::get('/detailPlaylist/{idPlaylist}', 'PlaylistFrontController@detailPlaylist');
+

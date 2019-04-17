@@ -12,4 +12,13 @@ class PlaylistFrontController extends Controller{
 
         return \View::make("playlists")->with("playList", $playlist);
     }
+
+    public function detailPlaylist($idPlayList){
+        $servicePlayList = new ViewPlayListService();
+        
+        $detailPlayList = $servicePlayList->recoverPlayListId($idPlayList);
+
+        return \View::make("detailplaylist")->with("detailPlayList", $detailPlayList);
+    }
+
 }

@@ -28,7 +28,7 @@
                 <?php
                     ?> </br> <?php
 
-                    ?> Name Playlist -> <a href="<?php echo $itemList['id'] ?>" target='_blank'><?php echo $itemList['title'] ?></a>  <?php
+                    ?> Name Playlist -> <a href="/detailPlaylist/<?php echo $itemList['id'] ?>" target='_blank'><?php echo $itemList['title'] ?></a>  <?php
                     
                     ?> </br> <?php
 

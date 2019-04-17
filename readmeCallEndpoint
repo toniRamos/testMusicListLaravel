@@ -1,0 +1,105 @@
+Call endpoing  '/api/loadPlayList' example call  ->
+
+    POST /api/loadPlayList HTTP/1.1
+    Host: 127.0.0.1:8000
+    Content-Type: application/json
+    cache-control: no-cache
+    Postman-Token: 46ab74d3-20b8-40a5-941c-b51902bcdb0e
+    [
+        {
+            "title": "Rock",
+            "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ&list=PLNxOe-buLm6cz8UQ-hyG1nm3RTNBUBv3K",
+            "image_url": "https://cdn-profiles.tunein.com/c57951/images/brickg.jpg",
+            "songs": [
+                {
+                    "name": "Bohemian Rhapsody",
+                    "artist": "Queen"
+                },
+                {
+                    "name": "Song Hotel California",
+                    "artist": "Eagles"
+                },
+                {
+                    "name": "Sweet Child O' Mine",
+                    "artist": "Guns N'Roses"
+                },
+                {
+                    "name": "Come Together",
+                    "artist": "The Beatels"
+                },
+                {
+                    "name": "Another Brick In The Wall",
+                    "artist": "Pink Floyd"
+                }
+            ]
+        },
+        {
+            "title": "Pop",
+            "url": "https://open.spotify.com/album/5vnTcST6XPWOdlYvA74lVN",
+            "image_url": "https://media.timeout.com/images/103461199/320/210/image.jpg",
+            "songs": [
+                {
+                    "name": "Kiss And Make Up",
+                    "artist": "Dua Lipa"
+                },
+                {
+                    "name": "Say My Name",
+                    "artist": "David Guetta"
+                },
+                {
+                    "name": "Polaroid",
+                    "artist": "Jonas Blue"
+                },
+                {
+                    "name": "Right Now",
+                    "artist": "Nick Jonas"
+                }
+            ]
+        },
+        {
+            "title": "Electro",
+            "url": "https://www.shazam.com/gb/track/107197500/electro-house-2012",
+            "image_url": "https://i.ytimg.com/vi/nZJ8WEF8_ck/hqdefault.jpg",
+            "songs": [
+                {
+                    "name": "Heaven",
+                    "artist": "Sam Feldt"
+                },
+                {
+                    "name": "I Got Love",
+                    "artist": "Don Diablo"
+                },
+                {
+                    "name": "WTF",
+                    "artist": "HUGEL"
+                },
+                {
+                    "name": "Say Something",
+                    "artist": "Lucas & Steve"
+                }
+            ]
+        },
+        {
+            "title": "K-Pop",
+            "url": "https://www.youtube.com/watch?v=2S24-y0Ij3Y&list=PL4QNnZJr8sRNKjKzArmzTBAlNYBDN2h-J",
+            "image_url": "https://i.cbc.ca/1.5097310.1555183474!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/775327695sf004-bts-visits-t.jpg",
+            "songs": [
+                {
+                    "name": "BBoom BBoom",
+                    "artist": "Momoland"
+                },
+                {
+                    "name": "Roller Coaster",
+                    "artist": "Chung Ha"
+                },
+                {
+                    "name": "Paint Me",
+                    "artist": "Mamamoo"
+                },
+                {
+                    "name": "Secret Garden",
+                    "artist": "Oh My Girl"
+                }
+            ]
+        }
+    ]------WebKitFormBoundary7MA4YWxkTrZu0gW--
